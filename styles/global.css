@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./font/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Chiret";
+  src: url("./font/Chiret-Regular.ttf");
+}
+
+@font-face {
+  font-family: Abyssinica;
+  src: url("font/AbyssinicaSIL-2.000/AbyssinicaSIL-Regular.ttf");
+}
+
+:root {
+  --primary-clr-1: rgb(146, 14, 82);
+  --primary-clr-2: rgb(255, 197, 5);
+  --secondary-clr-1: rgb(18, 15, 15);
+  --secondary-clr-2: rgb(20, 70, 90);
+  --clr-white: rgb(237, 235, 235);
+  --clr-gray: rgb(161, 161, 161);
+  --clr-warning: rgb(191, 66, 66);
+  --clr-red: rgb(168, 11, 68, 0.8);
+  --clr-success: rgb(2, 165, 6);
+  --clr-blue: rgb(73, 166, 233);
+
+  --background: var(--clr-white);
+  --foreground: var(--secondary-clr-1);
+
+  --letter-sp: 1.3px;
+  --letter-sp-big: 1.5px;
+  --letter-sp-small: 1.2px;
+
+  --line-height-para: 1.5;
+  --line-height-normal: 1.4;
+  --line-ht: 1.4;
+
+  --fs-extra-large: clamp(2em, 3vw, 2.5em);
+  --fs-large: clamp(1.5em, 3vw, 2em);
+  --fs-medium: clamp(1.2em, 3vw, 1.5em);
+  --fs-normal: clamp(0.9em, 3vw, 1em);
+  --fs--small: clamp(0.7em, 3vw, 0.9em);
+
+  --transition-usual: background-color, scale, color, opacity 0.3s ease,
+    transform 0.3s ease;
+
+  --main-padding: 0.8rem;
+
+  --max-width: 106.25rem;
+  /* --max-width: 1400px; to be replaced by the above value */
+  --mobile: 31.25em;
+}
+
+.dark-mode {
+  --background: var(--secondary-clr-1);
+  --foreground: var(--clr-white);
+}
+
+*::selection {
+  background-color: var(--clr-blue);
+  color: var(--background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+
+//* custome scroll bar
+
+html::-webkit-scrollbar {
+  width: clamp(0.4rem, 1vw + 2rem, 0.8rem);
+  transition: width 0.3s ease;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-clr-1);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 100vw;
+  border: solid 2px var(--background);
+}
+
+*/
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins" sans-serif;
+  font-family: sans-serif;
+}
+
+img,
+video {
+  width: 100%;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.nav-bar {
+  padding: 0.5rem var(--main-padding);
+  transition: var(--transition-usual);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, var(--clr-blue) 80%, var(--clr-white));
+  font-size: clamp(16px, 3vw, 18px);
+  border-bottom: solid 3px var(--foreground);
+  box-shadow: 0 0 10px var(--foreground);
+  z-index: 99;
+}
+
+.nav-bar__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.toggle-dark,
+.toggle-light {
+  width: 30px;
+  fill: var(--primary-clr-1) !important;
+}
+
+.toggle-dark:hover,
+.toggle-light:hover {
+  scale: 1.08;
+}
+
+.nav-bar__list-items .nav-bar__buttons {
+  width: 35px;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.nav-bar__list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-usual);
+}
+
+.nav-bar__list-items:first-child {
+  margin-right: auto;
+}
+
+.nav-bar__list-items a {
+  text-decoration: none;
+  color: var(--secondary-clr-1);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  letter-spacing: var(--letter-sp);
+  transition: var(--transition-usual);
+}
+
+.nav-bar__list-items:not(:first-child) a:hover {
+  border-bottom: solid var(--clr-warning) 3px;
+}
+
+.nav-bar__list-items .nav-bar__buttons svg {
+  fill: var(--secondary-clr-2);
+}
+
+.logo-holder {
+  padding: 0 !important;
+}
+
+.logo {
+  width: 40px;
+  mix-blend-mode: darken;
+  transition: var(--transition-usual);
+}
+
+.logo:hover {
+  scale: 1.05;
+}
+
+.error-message {
+  color: white !important;
+  background-color: var(--clr-warning) !important;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size: 17px;
+}

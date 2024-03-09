@@ -1,0 +1,30 @@
+form {
+  padding: 4rem 0.8rem;
+  border: solid var(--foreground) !important;
+  border-radius: 5px;
+}
+
+.form-title {
+  text-align: center;
+  color: var(--clr-blue);
+  font-family: "Poppins-bold";
+  letter-spacing: var(--letter-sp);
+}
+
+form input[type="submit"] {
+  width: unset;
+  padding: 0.7rem 2rem;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--clr-blue);
+  color: var(--background);
+  border-color: transparent;
+}
+
+.form-control:last-child {
+  /* border: solid; */
+  margin-left: auto;
+}

@@ -1,0 +1,25 @@
+form .file-input {
+  border: none;
+}
+
+form .submit-btn {
+  background-color: var(--clr-blue);
+  color: var(--foreground) !important;
+}
+
+form .submit-btn:hover {
+  color: var(--background) !important;
+}
+
+form .cancel-btn {
+  background-color: var(--clr-red);
+  transition: var(--transition-usual);
+  color: var(--foreground);
+}
+
+form .cancel-btn:hover {
+  background-color: var(--clr-warning);
+  border: transparent solid;
+  color: var(--background);
+  box-shadow: 0 0 10px var(--clr-warning);
+}

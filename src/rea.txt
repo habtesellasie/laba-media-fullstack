@@ -1,0 +1,20 @@
+Please take a note of the details below these are needed to access your account.
+Your account is now active.
+
+Control panel username:	b32_35070809
+Control panel password:	**********
+Control panel URL:	cpanel.byethost32.com
+MySQL username	b32_35070809
+MySQL password:	**********
+MySQL hostname:	sql202.byethost32.com
+FTP username:	b32_35070809
+FTP password:	**********
+FTP host name:	ftp.byethost32.com
+Your Website URL:	http://labamediaaa.byethost32.com
+ 	 
+Thank you for choosing us to host your websites!
+
+byethost32.com hosting services 2023
+
+
+

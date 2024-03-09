@@ -1,0 +1,46 @@
+.form-control select {
+  padding: 5px;
+  background-color: transparent;
+  border: solid var(--clr-blue);
+  border-radius: 5px;
+  font-size: 17px;
+  color: var(--foreground);
+}
+
+.radio-btn_control label {
+  position: unset;
+  padding: unset;
+  pointer-events: unset;
+  display: block;
+  padding: 5px 0;
+}
+
+.radio-btn_control input {
+  width: unset;
+  padding: unset;
+}
+
+.form-control textarea {
+  font-family: sans-serif;
+}
+
+.warner {
+  color: var(--clr-success);
+  font-size: clamp(16px, 2vw, 20px);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+input,
+textarea {
+  outline: none;
+  border-color: var(--clr-blue) !important;
+}
+.container {
+  align-items: stretch !important;
+}
+
+/* input[type="radio"]::marker,
+input[type="checkbox"]::marker {
+
+} */
