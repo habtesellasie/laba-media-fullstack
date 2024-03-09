@@ -4,26 +4,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("./font/Poppins/Poppins-Regular.ttf");
+  font-family: 'Poppins';
+  src: url('./font/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Poppins-bold";
-  src: url("./font/Poppins/Poppins-Bold.ttf");
+  font-family: 'Poppins-bold';
+  src: url('./font/Poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Chiret";
-  src: url("./font/Chiret-Regular.ttf");
+  font-family: 'Chiret';
+  src: url('./font/Chiret-Regular.ttf');
 }
 
 @font-face {
   font-family: Abyssinica;
-  src: url("font/AbyssinicaSIL-2.000/AbyssinicaSIL-Regular.ttf");
+  src: url('font/AbyssinicaSIL-2.000/AbyssinicaSIL-Regular.ttf');
 }
 
 :root {
@@ -100,8 +105,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: "Poppins" sans-serif;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 img,
@@ -205,6 +209,7 @@ video {
 }
 
 textarea {
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
+
   font-size: 17px;
 }
